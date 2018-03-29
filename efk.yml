@@ -1,0 +1,15 @@
+- hosts: localhost
+  remote_user: vagrant
+  become: yes
+  roles:
+    #- java
+    #- docker
+    - td-agent
+    - limits
+    - kernel
+    - libcurl
+    - java
+    - elasticsearch
+    - kibana
+    - nginx
+
